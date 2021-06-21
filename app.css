@@ -1,0 +1,118 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+}
+
+section div {
+    width: 33.33%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    color: white;
+}
+
+.background-1 {
+    background-color: #6F98A8;
+}
+.background-2 {
+    background-color: #72C3DC;
+}
+.background-3 {
+    background-color: #2F454E;
+}
+.background-4 {
+    background-color: #BFBFBF;
+}
+.background-grey {
+    background-color: #EFEFEF;
+}
+
+.border-1 {
+    border-left: 5px solid #6F98A8;
+}
+.border-2 {
+    border-left: 5px solid #72C3DC;
+}
+.border-3 {
+    border-left: 5px solid #2F454E;
+}
+.border-4 {
+    border-left: 5px solid #BFBFBF;
+}
+
+.button-container {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+.button-container button {
+    padding: 0.75em 0.5em;
+    width: 70%;
+    margin: 0.5em;
+    border-radius: 5px;
+    background-color: #72C3DC;
+    border-color: #72C3DC;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    min-width: max-content;
+}
+
+@media screen and (max-width: 480px) {
+    .app-container {
+        flex-direction: column-reverse;
+    }
+    .button-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+    }
+    .button-container button {
+        max-width: 45%;
+        width: 45%;
+    }
+    section {
+        flex-direction: column;
+        width: 100%;
+        align-content: space-around;
+    }
+
+    section div {
+        width: 98%;
+        height: 50px;
+        display: flex;
+        margin: 0.25em;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        color: black;
+        background-color: #EFEFEF;
+        border-left: 10px solid #EFEFEF;
+    }
+}
+
+footer {
+    margin: 0.5em;
+    width: 100%;
+    text-align: center;
+}
